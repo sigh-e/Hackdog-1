@@ -4,11 +4,8 @@
     <solid
         android:color="#FFF"
         />
-    <corners
-        android:bottomRightRadius="50dp"
-        android:bottomLeftRadius="50dp"
-        android:topLeftRadius="50dp"
-        android:topRightRadius="50dp"
+    <stroke
+        android:width="2dp"
+        android:color="#43BDD9"
         />
-
 </shape>

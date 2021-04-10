@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/second_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/base_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/TermAgreement" />
+
+    <TextView
+        android:id="@+id/termText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="6dp"
+        android:textColor="#000000"
+        android:text="Last updated: April 9, 2021 \n\nPlease read these terms before using the Ligtas app.\n\nYour access to and use of the application is conditioned on your acceptace of and compliance with these terms. These terms apply to all users and others who access or use the application.\n\nBy accessing or using the application you agree to be bound by these terms. If you disagree with any part of the terms you may not access the service."
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+
+    <TextView
+        android:id="@+id/TermAgreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TERM AGREEMENT"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <CheckBox
+        android:id="@+id/checkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/iAgree"
+        android:layout_width="146dp"
+        android:layout_height="17dp"
+        android:text="I agree and understand"
+        android:textColor="#43BDD9"
+        app:layout_constraintBottom_toBottomOf="@+id/checkAgree"
+        app:layout_constraintStart_toEndOf="@+id/checkAgree"
+        app:layout_constraintTop_toTopOf="@+id/checkAgree" />
+
+    <Button
+        android:id="@+id/termsProceed"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#43BDD9"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Proceed"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/checkAgree" />
+
+    <Button
+        android:id="@+id/termsBack"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#d3d3d3"
+        android:fontFamily="sans-serif"
+        android:text="Back"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/termsProceed"
+        app:layout_constraintTop_toBottomOf="@+id/checkAgree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
